@@ -10,11 +10,12 @@ body {
     font-family: 'Space Mono', monospace, sans-serif;
     font-weight: 700;
     color: hsl(186, 14%, 43%);
+    min-height: 100vh;
 }
 
 .container {
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     background-color: hsl(0, 0%, 100%);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -23,21 +24,27 @@ body {
 
 .bill-calculator {
     background-color: hsl(183, 100%, 15%);
-    padding: 1em;
+    padding: 1.5em;
+    border-radius: 10px;
 }
 
 .input {
     width: 100%;
-    padding: 10px 20px;
-    border: none;
+    padding: 10px 15px;
     margin-top: 5px;
-    border-radius: 5px;
     background-color: hsl(189, 41%, 97%);
-    text-align: right;
     outline: none;
+    border: none;
+    border-radius: 5px;
     color: hsl(183, 100%, 15%);
+    line-height: 20px;
     font-size: 24px;
     font-family: inherit;
+    text-align: right;
+}
+
+.custom {
+    font-size: 15px;
 }
 
 .icon {
@@ -54,7 +61,7 @@ body {
 
 .btn {
     width: 100%;
-    padding: 10px 25px;
+    padding: 10px 20px;
     font-family: inherit;
     text-transform: uppercase;
     border: none;
@@ -65,7 +72,7 @@ body {
 
 .btn-accent {
     display: grid;
-    grid-template-rows: 30px;
+    grid-template-rows: 20px;
     color:  hsl(0, 0%, 100%);
     align-items: center;
 }
@@ -79,5 +86,29 @@ body {
     margin: 1em 0;
 }
 
+@media (min-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .inputs-container{
+        width: 45%;
+    }
+
+    .bill-calculator {
+        width: 50%;
+    }
+
+    .buttons-div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
