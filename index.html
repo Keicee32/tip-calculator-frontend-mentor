@@ -16,6 +16,7 @@
   </style>
 </head>
 <body>
+  <h1>SPLI <br> TTER</h1>
 
   <main>
     <div class="container">
@@ -23,31 +24,37 @@
       <div class="inputs-container">
           <h4>Bill</h4>
           
-          <input type="text" name="bill-input" id="bills" class="input">
+          <input type="text" name="bill-input" id="bills" class="input" placeholder="0">
           <img src="./images/icon-dollar.svg" alt="dollar icon" class="icon">
 
           <p>Select Tip %</p>
             <div class="buttons-div">
-            <button class="btn btn-accent">5%</button> 
-            <button class="btn btn-accent">10%</button> 
-            <button class="btn btn-accent">15%</button> 
-            <button class="btn btn-accent">25%</button> 
-            <button class="btn btn-accent">50%</button> 
-            <input type="text" class="input custom"  placeholder="Custom"> 
-          </div>
+              <button class="btn btn-accent">5<span>%</span></button> 
+              <button class="btn btn-accent">10<span>%</span></button> 
+              <button class="btn btn-accent">15<span>%</span></button> 
+              <button class="btn btn-accent">25<span>%</span></button> 
+              <button class="btn btn-accent">50<span>%</span></button> 
+              <input type="text" id="custom" class="input custom"  placeholder="Custom"> 
+            </div>
 
-          <p>Number of People</p>
-          <input type="text" name="people-input" id="people" class="input">
+          <p class="flexed">Number of People <span class="hide error">Can't be zero</span></p>
+          <input type="text" name="people-input" id="people" class="input" placeholder="0">
           <img src="./images/icon-person.svg" class="icon" alt="person icon">
         </div>
 
         <!-- Div here -->
         <div class="bill-calculator">
-          Tip Amount
-          / person
+          <div class="tip-person">
+            <p><span class="accent">Tip Amount</span> <br> / person</p>
+            <p><span id="tip-value" class="value">$0.00</span></p>
+          </div>
+          
 
-          Total
-          / person
+          <div class="total-person">
+            <p><span class="accent">Total</span> <br> / person</p>
+            <p><span id="total-value" class="value">$0.00</span></p>
+          </div>
+          
 
           <button class="btn btn-reset">Reset</button>
         </div>
@@ -63,5 +70,7 @@
     </div>
   </footer>
   
+
+  <script src="script.js"></script>
 </body>
 </html>
