@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace, sans-serif;
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: hsl(0, 0%, 100%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 1.5em;
+}
+
+.bill-calculator {
+    background-color: hsl(183, 100%, 15%);
+    padding: 1em;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    outline: none;
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    font-family: inherit;
+}
+
+.icon {
+    transform: translate(20px, -40px);
+    /* position: relative; */
+}
+
+.buttons-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 1em 0;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px 25px;
+    font-family: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(183, 100%, 15%);
+    margin: 5px 0 2px;
+}
+
+.btn-accent {
+    display: grid;
+    grid-template-rows: 30px;
+    color:  hsl(0, 0%, 100%);
+    align-items: center;
+}
+
+.btn-reset {
+    background-color: hsl(172, 67%, 45%);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: hsl(183, 100%, 15%);
+    margin: 1em 0;
+}
+
+
+
