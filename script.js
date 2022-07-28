@@ -54,5 +54,6 @@ btnReset.addEventListener('click', () => {
     tipValue.textContent = '$0.00'
     totalValue.textContent = '$0.00'
     custom.value = bills.value = people.value = ''
-
+    bills.style.border = people.style.border = ''
+    errors.classList.add('hide')
 })
